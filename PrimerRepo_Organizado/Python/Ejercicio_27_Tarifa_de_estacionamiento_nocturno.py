@@ -1,0 +1,13 @@
+
+horas = float(input("Ingrese las horas: "))
+nocturno = input("¿Es horario nocturno? (S/N): ").upper()
+
+total = horas * 1.50
+
+if horas > 8:
+    total = total * 1.25
+
+if nocturno == "S":
+    total = total * 1.30
+
+print("Total a pagar: $", round(total, 2))

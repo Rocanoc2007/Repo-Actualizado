@@ -1,0 +1,17 @@
+Algoritmo TarifaTaxi()
+Inicio
+    Definir km, tarifa, recargo Como Real
+    Definir noche Como Caracter
+    Escribir "Ingrese los kilometros recorridos:"
+    Leer km
+    Escribir "¿Es de noche? (S/N):"
+    Leer noche
+    tarifa <- 2 + (1.50 * km)
+    Si km > 10 Entonces
+        tarifa <- tarifa * 1.20
+    FinSi
+    Si noche = "S" O noche = "s" Entonces
+        tarifa <- tarifa * 1.30
+    FinSi
+    Escribir "Total a pagar: $", tarifa
+Fin
