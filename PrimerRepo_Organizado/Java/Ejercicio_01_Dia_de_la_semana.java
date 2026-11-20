@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class DiaSemana {
+public class Ejercicio_01_Dia_de_la_semana {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Sel4 {
+public class Ejercicio_29_Descuento_por_volumen_y_cliente_frecuente {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -31,9 +31,8 @@ public class Sel4 {
         double total = monto - valorDescuento;
 
         System.out.println("Descuento: " + (descuento * 100) + "%");
-        System.out.printf("Valor descontado: $%.2f%n", valorDescuento);
-        System.out.printf("Total a pagar: $%.2f%n", total);
+        System.out.printf("Valor descontado: ", valorDescuento);
+        System.out.printf("Total a pagar: ", total);
 
-        sc.close();
     }
 }

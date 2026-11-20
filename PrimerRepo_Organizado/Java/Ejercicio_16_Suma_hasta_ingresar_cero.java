@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class SumaNumeros {
+public class Ejercicio_16_Suma_hasta_ingresar_cero {
     public static void main(String[] args) {
         // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);

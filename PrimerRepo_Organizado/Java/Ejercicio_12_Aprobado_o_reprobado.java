@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class EstadoEstudiante {
+public class Ejercicio_12_Aprobado_o_reprobado {
     public static void main(String[] args) {
         // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);

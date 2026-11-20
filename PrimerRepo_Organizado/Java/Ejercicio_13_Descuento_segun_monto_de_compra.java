@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DescuentoCompra {
+public class Ejercicio_13_Descuento_segun_monto_de_compra {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

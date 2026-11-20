@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ConversionCoordenadas {
+public class Ejercicio_24_Conversion_de_coordenadas_polares_a_cartesianas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

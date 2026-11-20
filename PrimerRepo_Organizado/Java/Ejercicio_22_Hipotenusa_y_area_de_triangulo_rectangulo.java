@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TrianguloRectangulo {
+public class Ejercicio_22_Hipotenusa_y_area_de_triangulo_rectangulo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

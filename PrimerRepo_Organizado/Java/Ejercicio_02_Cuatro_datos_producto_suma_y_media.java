@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SumaMediaAritmetica {
+public class Ejercicio_02_Cuatro_datos_producto_suma_y_media {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

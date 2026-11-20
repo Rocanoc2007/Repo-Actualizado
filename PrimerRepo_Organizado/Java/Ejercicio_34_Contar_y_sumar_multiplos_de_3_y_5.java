@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class R4 {
+public class Ejercicio_34_Contar_y_sumar_multiplos_de_3_y_5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

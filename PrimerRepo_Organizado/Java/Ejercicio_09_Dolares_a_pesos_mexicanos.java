@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class DolaresAPesos {
+public class Ejercicio_09_Dolares_a_pesos_mexicanos {
     public static void main(String[] args) {
         // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);

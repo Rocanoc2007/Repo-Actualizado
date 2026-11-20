@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class PrecioFinalIVA {
+public class Ejercicio_06_Precio_final_con_descuento_e_IVA {
     public static void main(String[] args) {
         // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AreaRectangulo {
+public class Ejercicio_04_Area_de_un_rectangulo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

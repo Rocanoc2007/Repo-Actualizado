@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class GastoTransporte {
+public class Ejercicio_07_Gasto_semanal_de_transporte {
     public static void main(String[] args) {
         // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);

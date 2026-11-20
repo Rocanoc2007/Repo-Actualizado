@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Sel3 {
+public class Ejercicio_28_Tipo_de_ecuacion_cuadratica {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

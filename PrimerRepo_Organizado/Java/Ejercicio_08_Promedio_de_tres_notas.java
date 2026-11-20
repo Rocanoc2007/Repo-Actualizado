@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class PromedioNotas {
+public class Ejercicio_08_Promedio_de_tres_notas {
     public static void main(String[] args) {
         // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);

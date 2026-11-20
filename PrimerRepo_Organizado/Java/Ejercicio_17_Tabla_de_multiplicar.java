@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class TablaMultiplicar {
+public class Ejercicio_17_Tabla_de_multiplicar {
     public static void main(String[] args) {
         // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);

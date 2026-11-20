@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Sel2 {
+public class Ejercicio_27_Tarifa_de_estacionamiento_nocturno {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

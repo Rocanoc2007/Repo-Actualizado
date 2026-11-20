@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ParImpar {
+public class Ejercicio_14_Numero_par_o_impar {
     public static void main(String[] args) {
         // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);

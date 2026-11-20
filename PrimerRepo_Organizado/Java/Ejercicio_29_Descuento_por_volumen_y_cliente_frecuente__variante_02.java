@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class DescuentoTienda {
+public class Ejercicio_29_Descuento_por_volumen_y_cliente_frecuente__variante_02 {
     public static void main(String[] args) {
         // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);

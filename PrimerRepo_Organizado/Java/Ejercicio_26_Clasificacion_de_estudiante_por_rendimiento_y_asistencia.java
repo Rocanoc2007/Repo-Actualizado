@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Sel1 {
+public class Ejercicio_26_Clasificacion_de_estudiante_por_rendimiento_y_asistencia {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

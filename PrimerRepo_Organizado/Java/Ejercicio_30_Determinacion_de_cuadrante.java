@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Sel5 {
+public class Ejercicio_30_Determinacion_de_cuadrante {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

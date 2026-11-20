@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class R3 {
+public class Ejercicio_33_Ahorro_con_aportes_variables {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

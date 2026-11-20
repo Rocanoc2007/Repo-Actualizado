@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CostoEnvio {
+public class Ejercicio_23_Costo_de_envio_con_peso_volumetrico {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

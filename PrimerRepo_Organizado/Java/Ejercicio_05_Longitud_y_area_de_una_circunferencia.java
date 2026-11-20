@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LongitudAreaCircunferencia {
+public class Ejercicio_05_Longitud_y_area_de_una_circunferencia {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

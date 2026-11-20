@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class AreaPerimetro {
+public class Ejercicio_10_Area_y_perimetro_de_un_rectangulo {
     public static void main(String[] args) {
         // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);

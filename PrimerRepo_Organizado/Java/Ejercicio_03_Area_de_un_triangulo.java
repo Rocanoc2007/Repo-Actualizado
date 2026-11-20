@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AreaTriangulo {
+public class Ejercicio_03_Area_de_un_triangulo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-public class MenorDeTres {
+public class Ejercicio_15_Menor_de_tres_numeros {
     public static void main(String[] args) {
         // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);

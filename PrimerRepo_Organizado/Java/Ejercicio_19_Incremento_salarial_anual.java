@@ -1,4 +1,4 @@
-public class IncrementoSalarial {
+public class Ejercicio_19_Incremento_salarial_anual {
     public static void main(String[] args) {
         // Declaracion de variables
         double salario;

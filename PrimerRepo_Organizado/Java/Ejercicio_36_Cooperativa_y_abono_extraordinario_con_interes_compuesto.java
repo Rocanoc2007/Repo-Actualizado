@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Cooperativa {
+public class Ejercicio_36_Cooperativa_y_abono_extraordinario_con_interes_compuesto {
     public static void main(String[] args) {
         // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);

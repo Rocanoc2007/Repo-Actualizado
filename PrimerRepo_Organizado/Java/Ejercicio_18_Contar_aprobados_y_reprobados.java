@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ContarAprobados {
+public class Ejercicio_18_Contar_aprobados_y_reprobados {
     public static void main(String[] args) {
         // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);

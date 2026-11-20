@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class R5 {
+public class Ejercicio_35_Inversion_de_un_numero {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

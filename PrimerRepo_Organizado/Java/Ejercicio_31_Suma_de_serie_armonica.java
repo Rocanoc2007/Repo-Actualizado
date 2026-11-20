@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class R1 {
+public class Ejercicio_31_Suma_de_serie_armonica {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

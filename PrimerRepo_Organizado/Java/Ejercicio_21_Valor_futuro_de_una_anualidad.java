@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ValorFuturo {
+public class Ejercicio_21_Valor_futuro_de_una_anualidad {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
