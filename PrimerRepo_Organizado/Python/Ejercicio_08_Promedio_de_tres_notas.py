@@ -1,3 +1,5 @@
+# Ejercicio 8: Promedio de tres notas
+
 # Ingresar primera calificación
 calificacion1 = float(input("Ingrese calificación 1: "))
 

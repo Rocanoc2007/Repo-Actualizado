@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Ejercicio_29_Descuento_por_volumen_y_cliente_frecuente {
     public static void main(String[] args) {
+
+        // Crear objeto para ingresar datos
         Scanner sc = new Scanner(System.in);
 
         // Ingresar datos
@@ -40,6 +42,7 @@ public class Ejercicio_29_Descuento_por_volumen_y_cliente_frecuente {
             System.out.println("El monto no puede ser negativo");
         }
 
+        // Cerrar Scanner
         sc.close();
     }
 }
