@@ -1,9 +1,14 @@
-Algoritmo diaSemana()
+Algoritmo diaSemana
 Inicio
-    Definir numero como entero
+    // Declarar variable
+    Definir numero Como Entero
+
+    // Ingresar número
     Escribir "Ingrese un número del 1 al 7"
-    Leer numero  
-    Segun numero Hacer
+    Leer numero
+
+    // Determinar día de la semana
+    Dependiendo_De (numero) Hacer
         1: Escribir "Lunes"
         2: Escribir "Martes"
         3: Escribir "Miércoles"
@@ -11,5 +16,7 @@ Inicio
         5: Escribir "Viernes"
         6: Escribir "Sábado"
         7: Escribir "Domingo"
-    FinSegun
+        De Otro Modo:
+            Escribir "Número inválido"
+    FinDependiendo_De
 Fin

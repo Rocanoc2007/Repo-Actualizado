@@ -1,13 +1,24 @@
+# Definir tarifa
+tarifa = 2.50
 
-peso_real = float(input("Ingrese el peso real en kg: "))
-largo = float(input("Ingrese el largo en cm: "))
-ancho = float(input("Ingrese el ancho en cm: "))
-alto = float(input("Ingrese el alto en cm: "))
+# Ingresar datos
+peso = float(input("Ingrese peso real en kg: "))
+largo = float(input("Ingrese largo en cm: "))
+ancho = float(input("Ingrese ancho en cm: "))
+alto = float(input("Ingrese alto en cm: "))
 
-peso_volumetrico = (largo * ancho * alto) / 5000
-peso_cobrar = max(peso_real, peso_volumetrico)
-costo = peso_cobrar * 2.50
+# Calcular peso volumétrico
+pesoVolumetrico = (largo * ancho * alto) / 5000
 
-print("Peso volumétrico:", round(peso_volumetrico, 2), "kg")
-print("Peso a cobrar:", round(peso_cobrar, 2), "kg")
-print("Costo total: $", round(costo, 2))
+# Determinar peso a cobrar
+if peso > pesoVolumetrico:
+    pesoCobrar = peso
+else:
+    pesoCobrar = pesoVolumetrico
+
+# Calcular costo total
+totalPagar = pesoCobrar * tarifa
+
+# Mostrar resultados
+print("El peso a cobrar es:", pesoCobrar, "kg")
+print("El total a pagar es: $", totalPagar)

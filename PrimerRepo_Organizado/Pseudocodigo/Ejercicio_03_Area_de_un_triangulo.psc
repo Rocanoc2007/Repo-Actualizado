@@ -1,11 +1,17 @@
 Algoritmo areaTriangulo()
-    Inicio
-          Definir base, altura, área como real
-          área = 0
-          Escribir "Ingrese base del triángulo"
-          Leer base 
-          Escribir "Ingrese altura del triángulo"
-          Leer altura 
-          área = base * altura / 2
-          Escribir " El area es:", área
-    Fin
+Inicio
+    // Declarar variables
+    Definir base, altura, area Como Real
+
+    // Ingresar datos
+    Escribir "Ingrese base del triángulo"
+    Leer base
+    Escribir "Ingrese altura del triángulo"
+    Leer altura
+
+    // Calcular área
+    area <- base * altura / 2
+
+    // Mostrar resultado
+    Escribir "El área es: ", area
+Fin

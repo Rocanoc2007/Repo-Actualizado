@@ -1,11 +1,16 @@
 Algoritmo ParImpar()
 Inicio
+    // Declarar variable
     Definir numero Como Entero
-    Escribir "Ingrese un numero entero:"
+
+    // Ingresar número
+    Escribir "Ingrese un número entero:"
     Leer numero
+
+    // Verificar si es par o impar
     Si numero MOD 2 = 0 Entonces
-        Escribir "El numero es PAR"
+        Escribir "El número es PAR"
     SiNo
-        Escribir "El numero es IMPAR"
+        Escribir "El número es IMPAR"
     FinSi
 Fin

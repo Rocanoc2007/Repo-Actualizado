@@ -1,24 +1,23 @@
-
 import java.util.Scanner;
 
-public class S2 {
+public class TrianguloRectangulo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Ingrese el primer cateto: ");
-        double cateto1 = sc.nextDouble();
+        // Ingresar catetos
+        System.out.print("Ingrese cateto a: ");
+        double a = sc.nextDouble();
 
-        System.out.print("Ingrese el segundo cateto: ");
-        double cateto2 = sc.nextDouble();
+        System.out.print("Ingrese cateto b: ");
+        double b = sc.nextDouble();
 
-        double hipotenusa = Math.sqrt(
-            Math.pow(cateto1, 2) + Math.pow(cateto2, 2)
-        );
+        // Calcular hipotenusa y área
+        double c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        double area = (a * b) / 2;
 
-        double area = (cateto1 * cateto2) / 2;
-
-        System.out.printf("Hipotenusa: %.2f%n", hipotenusa);
-        System.out.printf("Área: %.2f%n", area);
+        // Mostrar resultados
+        System.out.println("La hipotenusa es: " + c);
+        System.out.println("El área del triángulo es: " + area);
 
     }
 }

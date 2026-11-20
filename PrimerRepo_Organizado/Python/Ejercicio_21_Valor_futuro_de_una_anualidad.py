@@ -1,17 +1,17 @@
+# Ingresar datos
+depositoMensual = float(input("Ingrese depósito mensual: "))
+tasaMensual = float(input("Ingrese tasa mensual: "))
+meses = int(input("Ingrese número de meses: "))
 
-deposito = float(input("Ingrese el depósito mensual: "))
-tasa = float(input("Ingrese la tasa mensual en decimal: "))
-meses = int(input("Ingrese el número de meses: "))
+# Calcular total depositado
+totalDepositado = depositoMensual * meses
 
-if meses > 0 and tasa >= 0:
-    total_depositado = deposito * meses
-
-    if tasa == 0:
-        valor_futuro = total_depositado
-    else:
-        valor_futuro = deposito * (((1 + tasa) ** meses - 1) / tasa)
-
-    print("Total depositado: $", round(total_depositado, 2))
-    print("Valor futuro: $", round(valor_futuro, 2))
+# Calcular valor futuro
+if tasaMensual == 0:
+    valorFuturo = totalDepositado
 else:
-    print("Datos no válidos")
+    valorFuturo = depositoMensual * (((1 + tasaMensual)**meses - 1) / tasaMensual)
+
+# Mostrar resultados
+print("El valor total depositado es:", totalDepositado)
+print("El valor futuro es:", valorFuturo)

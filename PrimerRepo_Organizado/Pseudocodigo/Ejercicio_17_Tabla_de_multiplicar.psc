@@ -6,7 +6,7 @@ Inicio
     // Inicializar el contador
     i <- 1
     // Repetir mientras i sea menor o igual a 10
-    Mientras i <= 10 Hacer
+    Mientras (i <= 10) Hacer
         resultado <- K * i
         Escribir K, " x ", i, " = ", resultado
         // Incrementar el contador

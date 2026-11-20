@@ -1,20 +1,27 @@
-Algoritmo MenorDeTres
+Algoritmo MenorDeTres()
 Inicio
+    // Declarar variables
     Definir num1, num2, num3, menor Como Real
-    Escribir "Ingrese el primer numero:"
+
+    // Ingresar los tres números
+    Escribir "Ingrese el primer número:"
     Leer num1
-    Escribir "Ingrese el segundo numero:"
+    Escribir "Ingrese el segundo número:"
     Leer num2
-    Escribir "Ingrese el tercer numero:"
+    Escribir "Ingrese el tercer número:"
     Leer num3
-    Si num1 <= num2 Y num1 <= num3 Entonces
+
+    // Determinar el número menor
+    Si (num1 <= num2 Y num1 <= num3) Entonces
         menor <- num1
     SiNo
-        Si num2 <= num1 Y num2 <= num3 Entonces
+        Si (num2 <= num1 Y num2 <= num3) Entonces
             menor <- num2
         SiNo
             menor <- num3
         FinSi
     FinSi
-    Escribir "El menor de los tres numeros es: ", menor
+
+    // Mostrar resultado
+    Escribir "El menor de los tres números es: ", menor
 Fin

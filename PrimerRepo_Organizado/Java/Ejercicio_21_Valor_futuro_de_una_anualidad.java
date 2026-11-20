@@ -1,32 +1,35 @@
 import java.util.Scanner;
-public class S1 {
+
+public class ValorFuturo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Ingrese el depósito mensual: ");
-        double deposito = sc.nextDouble();
+        // Ingresar datos
+        System.out.print("Ingrese depósito mensual: ");
+        double depositoMensual = sc.nextDouble();
 
-        System.out.print("Ingrese la tasa mensual en decimal: ");
-        double tasa = sc.nextDouble();
+        System.out.print("Ingrese tasa mensual: ");
+        double tasaMensual = sc.nextDouble();
 
-        System.out.print("Ingrese el número de meses: ");
+        System.out.print("Ingrese número de meses: ");
         int meses = sc.nextInt();
 
-        if (meses > 0 && tasa >= 0) {
-            double totalDepositado = deposito * meses;
-            double valorFuturo;
+        // Calcular total depositado
+        double totalDepositado = depositoMensual * meses;
 
-            if (tasa == 0) {
-                valorFuturo = totalDepositado;
-            } else {
-                valorFuturo = deposito *
-                    ((Math.pow(1 + tasa, meses) - 1) / tasa);
-            }
+        // Calcular valor futuro
+        double valorFuturo;
 
-            System.out.printf("Total depositado: $%.2f%n", totalDepositado);
-            System.out.printf("Valor futuro: $%.2f%n", valorFuturo);
+        if (tasaMensual == 0) {
+            valorFuturo = totalDepositado;
         } else {
-            System.out.println("Datos no válidos");
+            valorFuturo = depositoMensual *
+                ((Math.pow(1 + tasaMensual, meses) - 1) / tasaMensual);
         }
+
+        // Mostrar resultados
+        System.out.println("El valor total depositado es: " + totalDepositado);
+        System.out.println("El valor futuro es: " + valorFuturo);
+
     }
 }

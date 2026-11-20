@@ -1,13 +1,16 @@
-
 import math
 
+# Ingresar datos
 radio = float(input("Ingrese el radio: "))
 angulo = float(input("Ingrese el ángulo en grados: "))
 
+# Convertir grados a radianes
 radianes = math.radians(angulo)
 
+# Calcular coordenadas cartesianas
 x = radio * math.cos(radianes)
 y = radio * math.sin(radianes)
 
-print("Coordenada X:", round(x, 2))
-print("Coordenada Y:", round(y, 2))
+# Mostrar resultados
+print("Coordenada X:", x)
+print("Coordenada Y:", y)

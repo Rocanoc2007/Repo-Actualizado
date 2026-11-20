@@ -1,25 +1,36 @@
 Algoritmo costoEnvio()
-  Inicio
-    Definir peso, largo,ancho,alto,pesoVolumetrico, tarifa como decimal
-    Definir totalPagar como decimal
-    Escribir "La tarifa es 2.50 por kilogramo"
-    tarifa <-2.50
-    Escribir "Ingrese peso real"
+Inicio
+    // Declarar variables
+    Definir peso, largo, ancho, alto Como Real
+    Definir pesoVolumetrico, pesoCobrar, tarifa, totalPagar Como Real
+
+    // Definir tarifa
+    tarifa <- 2.50
+
+    // Ingresar datos
+    Escribir "Ingrese peso real en kg:"
     Leer peso
-    Escribir "Ingrese largo"
+    Escribir "Ingrese largo en cm:"
     Leer largo
-    Escribir "Ingrese ancho"
+    Escribir "Ingrese ancho en cm:"
     Leer ancho
-    Escribir "Ingrese alto"
+    Escribir "Ingrese alto en cm:"
     Leer alto
-    pesoVolumetrico <- (largo*ancho*alto)/5000
-    Si peso > pesoVolumetrico entonces
-      Escribir "El peso a cobrar es" peso
-            totalPagar <-peso * tarifa
-      Escribir "El total a pagar es" totalPagar
-    Sino
-      Escribir "El peso a cobrar es: " pesoVolumetrico
-            totalPagar <-pesoVolumetrico * tarifa
-      Escribir "El total a pagar es: " totalPagar
-    Finsi
-  Fin
+
+    // Calcular peso volumétrico
+    pesoVolumetrico <- (largo * ancho * alto) / 5000
+
+    // Determinar peso a cobrar
+    Si (peso > pesoVolumetrico) Entonces
+        pesoCobrar <- peso
+    SiNo
+        pesoCobrar <- pesoVolumetrico
+    FinSi
+
+    // Calcular costo total
+    totalPagar <- pesoCobrar * tarifa
+
+    // Mostrar resultados
+    Escribir "El peso a cobrar es: ", pesoCobrar, " kg"
+    Escribir "El total a pagar es: $", totalPagar
+Fin

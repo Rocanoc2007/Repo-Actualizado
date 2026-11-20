@@ -1,12 +1,22 @@
-Algoritmo converionCoordenadas()
-  Inicio
-    Definir radio,angulo,radianes,x,y como decimal
-    Escribir "Ingrese el radio: "
+Algoritmo conversionCoordenadas()
+Inicio
+    // Declarar variables
+    Definir radio, angulo, radianes, x, y Como Real
+
+    // Ingresar datos
+    Escribir "Ingrese el radio:"
     Leer radio
-    Escribir "Ingrese el angulo: "
+    Escribir "Ingrese el ángulo en grados:"
     Leer angulo
-    radianes <- (angulo * 3.1416) / 180
-    x <- radio * cos(radianes)
-    y <- radio * sen(radianes)
-    Escribir "Las coordenadas son: " x,y
-  Fin
+
+    // Convertir grados a radianes
+    radianes <- (angulo * PI) / 180
+
+    // Calcular coordenadas cartesianas
+    x <- radio * COS(radianes)
+    y <- radio * SEN(radianes)
+
+    // Mostrar resultados
+    Escribir "Coordenada X: ", x
+    Escribir "Coordenada Y: ", y
+Fin
