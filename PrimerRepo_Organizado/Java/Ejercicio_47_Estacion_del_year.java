@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercicio_47_Estacion_del_ano {
+public class Ejercicio_47_Estacion_del_year {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
