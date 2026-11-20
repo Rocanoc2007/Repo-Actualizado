@@ -1,28 +1,34 @@
 Algoritmo determinacionCuadrante()
-  Inicio
+Inicio
+    // Declarar variables
     Definir x, y Como Real
-    Escribir "Ingrese la coordenada x: "
+
+    // Ingresar coordenadas
+    Escribir "Ingrese la coordenada x:"
     Leer x
-    Escribir "Ingrese la coordenada y: "
+    Escribir "Ingrese la coordenada y:"
     Leer y
-    Si x = 0 Y y = 0 Entonces
-        Escribir "El punto esta en el origen"
-    Sino
-        Si x = 0 Entonces
-            Escribir "El punto esta sobre el eje Y"
-        Sino
-            Si y = 0 Entonces
-                Escribir "El punto esta sobre el eje X"
-            Sino
-                Si x > 0 Y y > 0 Entonces
+
+    // Determinar posición del punto
+    Si (x = 0 Y y = 0) Entonces
+        Escribir "El punto está en el origen"
+    SiNo
+        Si (x = 0) Entonces
+            Escribir "El punto está sobre el eje Y"
+        SiNo
+            Si (y = 0) Entonces
+                Escribir "El punto está sobre el eje X"
+            SiNo
+                // Identificar cuadrante
+                Si (x > 0 Y y > 0) Entonces
                     Escribir "Primer cuadrante"
-                Sino
-                    Si x < 0 Y y > 0 Entonces
+                SiNo
+                    Si (x < 0 Y y > 0) Entonces
                         Escribir "Segundo cuadrante"
-                    Sino
-                        Si x < 0 Y y < 0 Entonces
+                    SiNo
+                        Si (x < 0 Y y < 0) Entonces
                             Escribir "Tercer cuadrante"
-                        Sino
+                        SiNo
                             Escribir "Cuarto cuadrante"
                         FinSi
                     FinSi

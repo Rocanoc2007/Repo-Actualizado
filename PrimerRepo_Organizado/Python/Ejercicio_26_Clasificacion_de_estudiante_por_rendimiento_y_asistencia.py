@@ -1,8 +1,11 @@
+# Ingresar datos
+promedio = float(input("Ingrese el promedio (0 a 10): "))
+asistencia = float(input("Ingrese el porcentaje de asistencia: "))
 
-promedio = float(input("Ingrese el promedio (0-10): "))
-asistencia = float(input("Ingrese la asistencia (%): "))
-
+# Validar datos
 if 0 <= promedio <= 10 and 0 <= asistencia <= 100:
+
+    # Clasificar estudiante
     if promedio >= 9 and asistencia >= 90:
         categoria = "Excelente"
     elif promedio >= 7 and asistencia >= 80:
@@ -12,6 +15,7 @@ if 0 <= promedio <= 10 and 0 <= asistencia <= 100:
     else:
         categoria = "Deficiente"
 
+    # Mostrar resultado
     print("Categoría:", categoria)
 else:
-    print("Datos no válidos")
+    print("Datos fuera del rango permitido")

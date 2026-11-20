@@ -1,22 +1,30 @@
 Algoritmo ecuacionCuadratica()
-  Inicio
+Inicio
+    // Declarar variables
     Definir a, b, c, discriminante Como Real
-    Escribir "Ingrese el coeficiente a: "
+
+    // Ingresar coeficientes
+    Escribir "Ingrese el coeficiente a:"
     Leer a
-    Escribir "Ingrese el coeficiente b: "
+    Escribir "Ingrese el coeficiente b:"
     Leer b
-    Escribir "Ingrese el coeficiente c: "
+    Escribir "Ingrese el coeficiente c:"
     Leer c
+
+    // Verificar si es cuadrática
     Si a = 0 Entonces
-        Escribir "No es una ecuacion cuadratica"
-    Sino
-        discriminante <- b * b - 4 * a * c
+        Escribir "No es una ecuación cuadrática"
+    SiNo
+        // Calcular discriminante
+        discriminante <- b^2 - 4 * a * c
+
+        // Clasificar las soluciones
         Si discriminante > 0 Entonces
             Escribir "Tiene dos soluciones reales"
-        Sino
+        SiNo
             Si discriminante = 0 Entonces
-                Escribir "Tiene una solucion real"
-            Sino
+                Escribir "Tiene una solución real"
+            SiNo
                 Escribir "No tiene soluciones reales"
             FinSi
         FinSi

@@ -1,28 +1,34 @@
 import java.util.Scanner;
+
 public class Ejercicio_30_Determinacion_de_cuadrante {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Ingrese X: ");
+        // Ingresar coordenadas
+        System.out.println("Ingrese la coordenada x:");
         double x = sc.nextDouble();
 
-        System.out.print("Ingrese Y: ");
+        System.out.println("Ingrese la coordenada y:");
         double y = sc.nextDouble();
 
-        if (x > 0 && y > 0) {
+        // Determinar posición del punto
+        if (x == 0 && y == 0) {
+            System.out.println("El punto está en el origen");
+        } else if (x == 0) {
+            System.out.println("El punto está sobre el eje Y");
+        } else if (y == 0) {
+            System.out.println("El punto está sobre el eje X");
+
+        // Identificar cuadrante
+        } else if (x > 0 && y > 0) {
             System.out.println("Primer cuadrante");
         } else if (x < 0 && y > 0) {
             System.out.println("Segundo cuadrante");
         } else if (x < 0 && y < 0) {
             System.out.println("Tercer cuadrante");
-        } else if (x > 0 && y < 0) {
-            System.out.println("Cuarto cuadrante");
-        } else if (x == 0 && y == 0) {
-            System.out.println("El punto está en el origen");
-        } else if (x == 0) {
-            System.out.println("El punto está sobre el eje Y");
         } else {
-            System.out.println("El punto está sobre el eje X");
+            System.out.println("Cuarto cuadrante");
         }
+
     }
 }

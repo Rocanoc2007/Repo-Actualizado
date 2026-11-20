@@ -1,23 +1,32 @@
-Algoritmo numeroArmstrong
-  Inicio
-    Definir numero, original Como Entero
-    Definir digito, suma Como Entero
-    Escribir "Ingrese un numero de tres digitos: "
+Algoritmo numeroArmstrong()
+Inicio
+    // Declarar variables
+    Definir numero, original, digito, suma Como Entero
+
+    // Ingresar número
+    Escribir "Ingrese un número de tres dígitos:"
     Leer numero
+
+    // Validar número
     Si numero >= 100 Y numero <= 999 Entonces
+        // Inicializar variables
         original <- numero
         suma <- 0
+
+        // Extraer y elevar los dígitos al cubo
         Mientras numero > 0 Hacer
             digito <- numero MOD 10
             suma <- suma + (digito * digito * digito)
             numero <- TRUNC(numero / 10)
         FinMientras
+
+        // Verificar número de Armstrong
         Si suma = original Entonces
-            Escribir "Es un numero de Armstrong"
-        Sino
-            Escribir "No es un numero de Armstrong"
+            Escribir "Es un número de Armstrong"
+        SiNo
+            Escribir "No es un número de Armstrong"
         FinSi
-    Sino
-        Escribir "Debe ingresar un numero de tres digitos"
+    SiNo
+        Escribir "Debe ingresar un número de tres dígitos"
     FinSi
 Fin

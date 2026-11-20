@@ -1,13 +1,22 @@
-
-horas = float(input("Ingrese las horas: "))
+# Ingresar datos
+horas = float(input("Ingrese las horas de estacionamiento: "))
 nocturno = input("¿Es horario nocturno? (S/N): ").upper()
 
-total = horas * 1.50
+# Validar horas
+if horas > 0:
+    # Calcular tarifa base
+    tarifa = horas * 1.50
 
-if horas > 8:
-    total = total * 1.25
+    # Aplicar recargo por tiempo
+    if horas > 8:
+        tarifa = tarifa * 1.25
 
-if nocturno == "S":
-    total = total * 1.30
+    # Aplicar recargo nocturno
+    if nocturno == "S":
+        tarifa = tarifa * 1.30
 
-print("Total a pagar: $", round(total, 2))
+    # Mostrar resultado
+    total = tarifa
+    print("Total a pagar: $", round(total, 2))
+else:
+    print("Las horas deben ser mayores que cero")

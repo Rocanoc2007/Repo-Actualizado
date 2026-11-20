@@ -1,11 +1,18 @@
+# Ingresar datos
+N = int(input("Ingrese el valor de N: "))
 
-n = int(input("Ingrese N: "))
-suma = 0
+# Validar número
+if N > 0:
+    # Inicializar variables
+    suma = 0
+    i = 1
 
-if n > 0:
-    for i in range(1, n + 1):
-        suma = suma + 1 / i
+    # Calcular suma de la serie
+    while i <= N:
+        suma = suma + (1 / i)
+        i = i + 1
 
-    print("Suma de la serie:", round(suma, 6))
+    # Mostrar resultado
+    print("La suma de la serie es:", suma)
 else:
     print("N debe ser mayor que cero")

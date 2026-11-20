@@ -1,18 +1,21 @@
+# Ingresar coordenadas
+x = float(input("Ingrese la coordenada x: "))
+y = float(input("Ingrese la coordenada y: "))
 
-x = float(input("Ingrese X: "))
-y = float(input("Ingrese Y: "))
+# Determinar posición del punto
+if x == 0 and y == 0:
+    print("El punto está en el origen")
+elif x == 0:
+    print("El punto está sobre el eje Y")
+elif y == 0:
+    print("El punto está sobre el eje X")
 
-if x > 0 and y > 0:
+# Identificar cuadrante
+elif x > 0 and y > 0:
     print("Primer cuadrante")
 elif x < 0 and y > 0:
     print("Segundo cuadrante")
 elif x < 0 and y < 0:
     print("Tercer cuadrante")
-elif x > 0 and y < 0:
-    print("Cuarto cuadrante")
-elif x == 0 and y == 0:
-    print("El punto está en el origen")
-elif x == 0:
-    print("El punto está sobre el eje Y")
 else:
-    print("El punto está sobre el eje X")
+    print("Cuarto cuadrante")

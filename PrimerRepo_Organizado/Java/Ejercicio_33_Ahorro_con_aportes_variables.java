@@ -1,26 +1,37 @@
-
 import java.util.Scanner;
 
 public class Ejercicio_33_Ahorro_con_aportes_variables {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Ingrese el número de meses: ");
-        int meses = sc.nextInt();
+        // Ingresar cantidad de meses
+        System.out.println("Ingrese la cantidad de meses:");
+        int N = sc.nextInt();
 
-        double saldo = 0;
+        // Validar meses
+        if (N > 0) {
+            // Inicializar variables
+            double saldo = 0;
+            int mes = 1;
 
-        if (meses > 0) {
-            for (int i = 1; i <= meses; i++) {
-                System.out.print("Ingrese el aporte del mes " + i + ": ");
+            // Calcular ahorro mensual
+            while (mes <= N) {
+                System.out.println("Ingrese el aporte del mes " + mes + ":");
                 double aporte = sc.nextDouble();
 
-                saldo = (saldo + aporte) * 1.008;
+                // Acumular aporte y aplicar interés
+                saldo = saldo + aporte;
+                saldo = saldo * 1.008;
+
+                mes = mes + 1;
             }
 
-            System.out.printf("Saldo final: $%.2f%n", saldo);
+            // Mostrar resultado
+            System.out.println("El saldo final es: $" + saldo);
         } else {
-            System.out.println("El número de meses debe ser mayor que cero");
+            System.out.println("La cantidad de meses debe ser mayor que cero");
         }
+
+        sc.close();
     }
 }

@@ -1,17 +1,31 @@
 Algoritmo NumeroPerfecto()
 Inicio
+    // Declarar variables
     Definir N, i, suma Como Entero
-    Escribir "Ingrese un numero entero positivo:"
+
+    // Ingresar número
+    Escribir "Ingrese un número entero positivo:"
     Leer N
-    suma <- 0
-    Para i <- 1 Hasta N - 1 Hacer
-        Si N MOD i = 0 Entonces
-            suma <- suma + i
+
+    // Validar número
+    Si N > 0 Entonces
+        // Inicializar suma
+        suma <- 0
+
+        // Sumar divisores propios
+        Para i <- 1 Hasta N - 1 Hacer
+            Si N MOD i = 0 Entonces
+                suma <- suma + i
+            FinSi
+        FinPara
+
+        // Verificar número perfecto
+        Si suma = N Entonces
+            Escribir N, " es un número perfecto"
+        SiNo
+            Escribir N, " no es un número perfecto"
         FinSi
-    FinPara
-    Si N > 0 Y suma = N Entonces
-        Escribir N, " es un numero perfecto"
     SiNo
-        Escribir N, " no es un numero perfecto"
+        Escribir "Debe ingresar un número positivo"
     FinSi
 Fin

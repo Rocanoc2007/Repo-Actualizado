@@ -1,20 +1,31 @@
 Algoritmo cooperativa()
-  Inicio
-    Definir montoPrestamo,tasaTrimestral,porcentajeAbono como decimal
-    Definir montoTotal,abonoTotal,abonoExtra comomo decimal
-    Definir numeroTrimestres como entero
-    Escribir "Ingrese el monto del prestamo"
+Inicio
+    // Declarar variables
+    Definir montoPrestamo, tasaTrimestral, porcentajeAbono Como Real
+    Definir montoTotal, abonoTotal, abonoExtra Como Real
+    Definir numeroTrimestres Como Entero
+
+    // Ingresar datos
+    Escribir "Ingrese el monto del préstamo:"
     Leer montoPrestamo
-    Escribir "Ingrese la tasa trimestral"
+    Escribir "Ingrese la tasa trimestral en decimal:"
     Leer tasaTrimestral
-    Escribir "Ingrese porcentaje abono"
+    Escribir "Ingrese porcentaje de abono:"
     Leer porcentajeAbono
-    Escribir "Ingrese numero de trimestres"
+    Escribir "Ingrese número de trimestres:"
     Leer numeroTrimestres
-    montoTotal<-montoPrestamo(1+porcentajeAbono)^numeroTrimestres
-    abonoExtra<-(montoTotal-porcentajeAbono)/100
-    abonoTotal<-montoTotal-abonoExtra
-    Escribir"El monto antes del abono es:" montoTotal
-    Escribir"El abono es:" abonoExtra
-    Escribir"El monto final es:" abonoTotal
-Fin    
+
+    // Calcular monto con interés compuesto
+    montoTotal <- montoPrestamo * (1 + tasaTrimestral)^numeroTrimestres
+
+    // Calcular abono extraordinario
+    abonoExtra <- montoTotal * porcentajeAbono / 100
+
+    // Calcular monto final
+    abonoTotal <- montoTotal - abonoExtra
+
+    // Mostrar resultados
+    Escribir "El monto antes del abono es: ", montoTotal
+    Escribir "El abono es: ", abonoExtra
+    Escribir "El monto final es: ", abonoTotal
+Fin

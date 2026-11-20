@@ -5,20 +5,24 @@ public class Ejercicio_28_Tipo_de_ecuacion_cuadratica {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Ingrese a: ");
+        // Ingresar coeficientes
+        System.out.print("Ingrese el coeficiente a: ");
         double a = sc.nextDouble();
 
-        System.out.print("Ingrese b: ");
+        System.out.print("Ingrese el coeficiente b: ");
         double b = sc.nextDouble();
 
-        System.out.print("Ingrese c: ");
+        System.out.print("Ingrese el coeficiente c: ");
         double c = sc.nextDouble();
 
+        // Verificar si es cuadrática
         if (a == 0) {
             System.out.println("No es una ecuación cuadrática");
         } else {
+            // Calcular discriminante
             double discriminante = b * b - 4 * a * c;
 
+            // Clasificar las soluciones
             if (discriminante > 0) {
                 System.out.println("Tiene dos soluciones reales");
             } else if (discriminante == 0) {
@@ -26,10 +30,7 @@ public class Ejercicio_28_Tipo_de_ecuacion_cuadratica {
             } else {
                 System.out.println("No tiene soluciones reales");
             }
-
-            System.out.println("Discriminante: " + discriminante);
         }
 
-        sc.close();
     }
 }

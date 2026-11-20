@@ -1,12 +1,23 @@
+# Ingresar cantidad de meses
+N = int(input("Ingrese la cantidad de meses: "))
 
-meses = int(input("Ingrese el número de meses: "))
-saldo = 0
+# Validar meses
+if N > 0:
+    # Inicializar variables
+    saldo = 0
+    mes = 1
 
-if meses > 0:
-    for i in range(1, meses + 1):
-        aporte = float(input(f"Ingrese el aporte del mes {i}: "))
-        saldo = (saldo + aporte) * 1.008
+    # Calcular ahorro mensual
+    while mes <= N:
+        aporte = float(input(f"Ingrese el aporte del mes {mes}: "))
 
-    print("Saldo final: $", round(saldo, 2))
+        # Acumular aporte y aplicar interés
+        saldo = saldo + aporte
+        saldo = saldo * 1.008
+
+        mes = mes + 1
+
+    # Mostrar resultado
+    print("El saldo final es: $", saldo)
 else:
-    print("El número de meses debe ser mayor que cero")
+    print("La cantidad de meses debe ser mayor que cero")

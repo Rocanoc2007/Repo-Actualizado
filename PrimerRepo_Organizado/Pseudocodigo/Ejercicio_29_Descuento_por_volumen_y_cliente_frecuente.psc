@@ -1,31 +1,44 @@
 Algoritmo descuentoTienda()
-  Inicio
+Inicio
+    // Declarar variables
     Definir monto, descuento, total Como Real
     Definir frecuente Como Cadena
-    Escribir "Ingrese el monto de la compra: "
+
+    // Ingresar datos
+    Escribir "Ingrese el monto de la compra:"
     Leer monto
-    Escribir "¿Es cliente frecuente? (S/N): "
+    Escribir "¿Es cliente frecuente? (S/N):"
     Leer frecuente
-    Si monto >= 0 Entonces
+
+    // Validar monto
+    Si (monto >= 0) Entonces
         descuento <- 0
-        Si monto >= 500 Entonces
+
+        // Determinar descuento por compra
+        Si (monto >= 500) Entonces
             descuento <- 15
-        Sino
-            Si monto >= 300 Entonces
+        SiNo
+            Si (monto >= 300) Entonces
                 descuento <- 10
-            Sino
-                Si monto >= 100 Entonces
+            SiNo
+                Si (monto >= 100) Entonces
                     descuento <- 5
                 FinSi
             FinSi
         FinSi
-        Si frecuente = "S" Entonces
+
+        // Aplicar descuento adicional
+        Si (Mayusculas(frecuente) = "S") Entonces
             descuento <- descuento + 5
         FinSi
+
+        // Calcular total a pagar
         total <- monto - (monto * descuento / 100)
+
+        // Mostrar resultados
         Escribir "Descuento aplicado: ", descuento, "%"
         Escribir "Total a pagar: $", total
-    Sino
+    SiNo
         Escribir "El monto no puede ser negativo"
     FinSi
 Fin
