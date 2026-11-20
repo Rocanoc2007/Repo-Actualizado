@@ -1,16 +1,14 @@
-
 import java.util.Scanner;
 
 public class Ejercicio_29_Descuento_por_volumen_y_cliente_frecuente {
     public static void main(String[] args) {
-        public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         // Ingresar datos
-        System.out.print("Ingrese el monto de la compra: ");
+        System.out.println("Ingrese el monto de la compra:");
         double monto = sc.nextDouble();
 
-        System.out.print("¿Es cliente frecuente? (S/N): ");
+        System.out.println("¿Es cliente frecuente? (S/N):");
         String frecuente = sc.next().toUpperCase();
 
         // Validar monto
@@ -28,7 +26,7 @@ public class Ejercicio_29_Descuento_por_volumen_y_cliente_frecuente {
 
             // Aplicar descuento adicional
             if (frecuente.equals("S")) {
-                descuento += 5;
+                descuento = descuento + 5;
             }
 
             // Calcular total a pagar
@@ -37,9 +35,11 @@ public class Ejercicio_29_Descuento_por_volumen_y_cliente_frecuente {
             // Mostrar resultados
             System.out.println("Descuento aplicado: " + descuento + "%");
             System.out.println("Total a pagar: $" + total);
+
         } else {
             System.out.println("El monto no puede ser negativo");
         }
 
+        sc.close();
     }
 }
