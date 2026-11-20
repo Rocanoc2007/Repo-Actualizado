@@ -1,22 +1,29 @@
-# Ingresar la primera calificacion
-calificacion1 = float(input("Ingrese calificacion1: "))
-# Validar que la primera nota este entre 0 y 10
+# Ingresar primera calificación
+calificacion1 = float(input("Ingrese calificación 1: "))
+
+# Validar primera calificación
 while calificacion1 < 0 or calificacion1 > 10:
     print("Nota incorrecta, ingrese nuevamente")
-    calificacion1 = float(input())
-# Ingresar la segunda calificacion
-calificacion2 = float(input("Ingrese calificacion2: "))
-# Validar que la segunda nota este entre 0 y 10
+    calificacion1 = float(input("Ingrese calificación 1: "))
+
+# Ingresar segunda calificación
+calificacion2 = float(input("Ingrese calificación 2: "))
+
+# Validar segunda calificación
 while calificacion2 < 0 or calificacion2 > 10:
     print("Nota incorrecta, ingrese nuevamente")
-  calificacion2 = float(input())
-# Ingresar la tercera calificacion
-calificacion3 = float(input("Ingrese calificacion3: "))
-# Validar que la tercera nota este entre 0 y 10
+    calificacion2 = float(input("Ingrese calificación 2: "))
+
+# Ingresar tercera calificación
+calificacion3 = float(input("Ingrese calificación 3: "))
+
+# Validar tercera calificación
 while calificacion3 < 0 or calificacion3 > 10:
     print("Nota incorrecta, ingrese nuevamente")
-    calificacion3 = float(input())
-# Calcular el promedio de las tres notas
+    calificacion3 = float(input("Ingrese calificación 3: "))
+
+# Calcular promedio
 promedio = (calificacion1 + calificacion2 + calificacion3) / 3
-# Mostrar el resultado
-print("El promedio de las notas es:", promedio)
+
+# Mostrar resultado
+print("El promedio de las tres notas es:", promedio)
